@@ -1,0 +1,1 @@
+// metotla ilgili bazi bilgiler 
