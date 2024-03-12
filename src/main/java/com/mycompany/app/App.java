@@ -1,21 +1,19 @@
 package com.mycompany.app;
 import java.util.ArrayList;
 
-
-/**
- * Hello world!
- *
- */
-
 public class App {
-     public static boolean search(ArrayList<Integer> array, int e) {
-        System.out.println("inside search");
-        if (array == null) return false;
-  
-        for (int elt : array) {
-          if (elt == e) return true;
-        }
-        return false;
-      }
+    public static boolean calculatePrice(ArrayList<Integer> arr1,ArrayList<Integer> arr2, String message, int number) {
+        int product = 0;
+
+        for (int num : arr1)
+                product += num;
+
+        for (int num : arr2)
+                product *= num;
+
+            product -= number;
+            System.out.println("Product: " + product + "Message: " + message);
+            return true;
+    }
 }
 
