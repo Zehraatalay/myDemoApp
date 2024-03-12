@@ -44,17 +44,20 @@ public class AppTest
 
     }
 
+
     public void testNotFound() {
         ArrayList<Integer> array1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
         ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-        assertFalse(new App().calculatePrice(array1, array2, "test is not valid", 0));
+        assertFalse(! new App().calculatePrice(array1, array2, "test is not valid", 0));
 
     }
+
+
 
     public void testEmptyArray() {
         ArrayList<Integer> array1 = new ArrayList<>();
         ArrayList<Integer> array2 = new ArrayList<>();
-        assertFalse(new App().calculatePrice(array1, array2, "message", 0 ));
+        assertFalse(new App().calculatePrice(array1, array2, "message", 0));
 
     }
 
